@@ -25,5 +25,5 @@ Demo:
 
 ## Contact
 
-Author: Mark Yang
-Email: ideamark@qq.com
+* Author: Mark Yang
+* Email: ideamark@qq.com

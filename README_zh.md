@@ -25,5 +25,5 @@ V-Words 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以
 
 ## 联系方式
 
-作者：Mark Yang
-邮箱：ideamark@qq.com
+* 作者：Mark Yang
+* 邮箱：ideamark@qq.com
