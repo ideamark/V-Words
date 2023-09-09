@@ -31,6 +31,6 @@ def add_subtitle(video_path, text):
 
 
 if __name__ == '__main__':
-    add_subtitle('split_videos/test.mp4', '你好啊世界！')
+    add_subtitle('output/test.mp4', '你好啊世界！')
 
 

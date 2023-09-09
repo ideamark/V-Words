@@ -21,7 +21,7 @@ V-Words 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以
 1. 配置 `settings.py` 文件，设置原始视频路径 `video_path`
 2. 首先运行 `video2audio.py`，批量提取原始视频的音频到 `audio` 文件夹
 3. 然后运行 `audio2text.py`，将音频批量转化为 json文本，存于 `text` 文件夹
-4. 最后运行 `run.py`，按照 `words.csv` 中的单词和释义，批量生成单词视频片段至 `split_videos` 文件夹
+4. 最后运行 `run.py`，按照 `words.csv` 中的单词和释义，批量生成单词视频片段至 `output` 文件夹
 
 ## 联系方式
 

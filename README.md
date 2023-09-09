@@ -21,7 +21,7 @@ Demo:
 1. Config `settings.py` , set the origin videos path `video_path`
 2. Firstly, run `video2audio.py` to extract audio from original videos into folder `audio`
 3. Secondly, run `audio2text.py` to transfer audio files into json text files into folder `text`
-4. Finally, run `run.py`，refer to the words in `words.csv` to generate video clips into folder  `split_videos`
+4. Finally, run `run.py`，refer to the words in `words.csv` to generate video clips into folder `output`
 
 ## Contact
 
