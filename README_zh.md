@@ -6,7 +6,7 @@ V-Words 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以
 
 效果如下：
 
-[![Video Preview](https://img.youtube.com/vi/Z7-Wk-5Ed5E/0.jpg)](https://youtu.be/Z7-Wk-5Ed5E)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7-Wk-5Ed5E?si=mgD9SGVXOQ8Bp-3a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 安装
 
