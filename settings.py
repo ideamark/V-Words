@@ -1,0 +1,5 @@
+video_folder = r''
+audio_folder = 'audio'
+text_folder = 'text'
+output_folder = 'split_videos'
+csv_path = 'words.csv'
