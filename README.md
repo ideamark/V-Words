@@ -6,14 +6,7 @@ V-Words is a word video clip maker, which can make word short videos from amount
 
 Demo:
 
-<<<<<<< HEAD
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7-Wk-5Ed5E?si=mgD9SGVXOQ8Bp-3a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-=======
-<video controls>
-  <source src="demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
->>>>>>> parent of 40ce784 (	modified:   README.md)
+[![Video Preview](https://img.youtube.com/vi/Z7-Wk-5Ed5E/0.jpg)](https://youtu.be/Z7-Wk-5Ed5E)
 
 ## Installation
 
