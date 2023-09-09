@@ -14,7 +14,7 @@ V-Words 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以
 
   * 备注：windows下的安装向导需要勾选 `install legacy utilities`.
 * 安装 `pytorch`
-* `安装剩余模块：pip install -r requirements.txt`
+* 安装剩余模块：`pip install -r requirements.txt`
 
 ## 使用
 
