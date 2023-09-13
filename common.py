@@ -1,5 +1,5 @@
 import os
-import datetime
+from datetime import datetime
 import textwrap
 
 from settings import video_folder
@@ -11,12 +11,10 @@ def get_duration(index):
     return start_time, end_time
 
 
-def int_to_time(seconds=0):
-    time_obj = datetime.timedelta(seconds=seconds)
-    time_str = str(time_obj)
-    if '.' in time_str:
-        time_str = time_str.split('.')[0]
-    return time_str.replace(':', '_') if os.name == 'nt' else time_str
+def time_to_seconds(time, time_format='%H:%M:%S,%f'):
+    ref_dt = datetime(1900, 1, 1, 0, 0, 0)
+    time = datetime.strptime(str(time), time_format) - ref_dt
+    return time.seconds + time.microseconds / 1000000
 
 
 def clear_folder(folder):

@@ -1,5 +1,5 @@
-video_folder = r''
 audio_folder = 'audio'
-text_folder = 'text'
 output_folder = 'output'
+
+video_folder = r'/Users/mark/Downloads/test'
 csv_path = 'words.csv'
