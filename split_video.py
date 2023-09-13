@@ -9,7 +9,7 @@ from add_subtitle import add_subtitle
 
 
 def split_video(word='', explaination=''):
-    srt_ext = '.eng.srt'
+    srt_ext = '.srt'
     for srt_file in list_dir(video_folder, [srt_ext]):
         subtitles = []
         try:
