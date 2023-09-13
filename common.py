@@ -19,7 +19,10 @@ def time_to_seconds(time, time_format='%H:%M:%S,%f'):
 
 def clear_folder(folder):
     if os.listdir(folder):
-        os.system(f'rm -rf {folder}/*')
+        if os.name == 'nt':
+            os.system(f'del /q /s "{folder}\*"')
+        else:
+            os.system(f'rm -rf {folder}/*')
 
 
 def replace_ext(filename, new_extension):
