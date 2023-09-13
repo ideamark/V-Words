@@ -4,12 +4,12 @@ import pysrt
 from moviepy.editor import VideoFileClip
 
 from settings import output_folder, video_folder
-from common import time_to_seconds, list_videos, wrap_string, clear_folder
+from common import time_to_seconds, list_dir, wrap_string, clear_folder
 from add_subtitle import add_subtitle
 
 
 def split_video(word='', explaination=''):
-    for srt_file in [file for file in os.listdir(video_folder) if file.endswith(".srt")]:
+    for srt_file in list_dir(video_folder, ['.srt']):
         srt_path = os.path.join(video_folder, srt_file)
         for subtitle in pysrt.open(srt_path):
             text = subtitle.text.lower()
@@ -22,7 +22,7 @@ def split_video(word='', explaination=''):
                 print(f'[{start_time}, {end_time}] {result}')
                 base_name = os.path.splitext(srt_file)[0]
                 video_path = ''
-                for video in list_videos():
+                for video in list_dir(video_folder, ['.mp4', '.avi', '.mkv', '.mov', '.wmv']):
                     if base_name in os.path.basename(video):
                         video_path = video
                         break

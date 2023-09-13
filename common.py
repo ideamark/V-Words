@@ -31,25 +31,28 @@ def replace_ext(filename, new_extension):
     return new_filename
 
 
-def list_videos(root_dir=video_folder):
-    def is_video_file(file):
-        video_extensions = ['.mp4', '.avi', '.mkv', '.mov', '.wmv']
-        _, extension = os.path.splitext(file)
-        return extension.lower() in video_extensions
-    video_files = []
-    for root, dirs, files in os.walk(root_dir):
-        for file in files:
-            if is_video_file(file):
-                file_path = os.path.join(root, file)
-                video_files.append(file_path)
-    return video_files
-
-
 def wrap_string(text, max_length=50):
     wrapper = textwrap.TextWrapper(width=max_length)
     wrapped_text = wrapper.fill(text)
     return wrapped_text
 
 
+def list_dir(folder, extensions=[]):
+
+    def is_file_endswith(file, extensions):
+        for extension in extensions:
+            if file.endswith(extension):
+                return True
+        return False
+
+    file_list = []
+    for root, dirs, files in os.walk(folder):
+        for file in files:
+            if is_file_endswith(file, extensions):
+                file_path = os.path.join(root, file)
+                file_list.append(file_path)
+    return file_list
+
+
 if __name__ == '__main__':
-    print(list_videos(video_folder))
+    print(list_dir(video_folder, ['.mp4', '.avi', '.mkv', '.mov', '.wmv']))
