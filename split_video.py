@@ -27,7 +27,7 @@ def split_video(word='', explaination=''):
                 print(f'[{start_time}, {end_time}] {result}')
                 base_name = os.path.basename(srt_file).split(srt_ext)[0]
                 video_path = ''
-                for video in list_dir(video_folder, ['.mp4', '.avi', '.mkv', '.mov', '.wmv']):
+                for video in list_dir(video_folder, ['.mp4', '.mkv', '.wmv']):
                     if base_name in os.path.basename(video):
                         video_path = video
                         break
