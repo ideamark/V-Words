@@ -9,9 +9,14 @@ from add_subtitle import add_subtitle
 
 
 def split_video(word='', explaination=''):
-    for srt_file in list_dir(video_folder, ['.srt']):
-        srt_path = os.path.join(video_folder, srt_file)
-        for subtitle in pysrt.open(srt_path):
+    srt_ext = '.eng.srt'
+    for srt_file in list_dir(video_folder, [srt_ext]):
+        subtitles = []
+        try:
+            subtitles = pysrt.open(srt_file)
+        except Exception:
+            print(f'Can not parse {srt_file}')
+        for subtitle in subtitles:
             text = subtitle.text.lower()
             if word in text.split(' '):
                 start_time = subtitle.start
@@ -20,7 +25,7 @@ def split_video(word='', explaination=''):
                 end = time_to_seconds(end_time)
                 result = text.replace(word, f'[ {word} ]')
                 print(f'[{start_time}, {end_time}] {result}')
-                base_name = os.path.splitext(srt_file)[0]
+                base_name = os.path.basename(srt_file).split(srt_ext)[0]
                 video_path = ''
                 for video in list_dir(video_folder, ['.mp4', '.avi', '.mkv', '.mov', '.wmv']):
                     if base_name in os.path.basename(video):
