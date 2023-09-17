@@ -20,8 +20,7 @@ V-Words 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以
 
 1. 配置 `settings.py` 文件，设置原始视频路径 `video_path`
 2. 确保 srt 字幕文件和视频在同一目录下。
-3. 运行 `video2audio.py`，批量提取原始视频的音频到 `audio` 文件夹
-4. 运行 `run.py`，按照 `words.csv` 中的单词和释义，批量生成单词视频片段至 `output` 文件夹
+3. 运行 `run.py`，按照 `words.csv` 中的单词和释义，批量生成单词视频片段至 `output` 文件夹
 
 ## 联系方式
 

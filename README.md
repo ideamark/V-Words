@@ -20,8 +20,7 @@ Demo:
 
 1. Config `settings.py` to set the input video path: `video_path`
 2. Make sure srt files and videos are in the same path.
-3. Run `video2audio.py` to extract audio from input videos into folder `audio`
-4. Run `run.py`，refer to the words in `words.csv` to generate video clips into folder `output`
+3. Run `run.py`，refer to the words in `words.csv` to generate video clips into folder `output`
 
 ## Contact
 
