@@ -13,7 +13,6 @@ Demo:
 * Download and install [ffmpeg](https://ffmpeg.org/download.html), [ImageMagick](https://imagemagick.org/script/download.php)
 
   * Note: For windows, in the installation wizard you need to select `install legacy utilities`.
-* Install `pytorch`
 * Install residual modules: `pip install -r requirements.txt`
 
 ## Usage
