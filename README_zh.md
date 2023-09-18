@@ -1,8 +1,8 @@
-# V-Words
+# word-videos
 
 ## 综述
 
-V-Words 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以从海量的视频文件中自动截取视频片段，制作出单词短视频。
+word-videos 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以从海量的视频文件中自动截取视频片段，制作出单词短视频。
 
 效果如下：
 

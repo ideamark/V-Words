@@ -1,8 +1,8 @@
-# V-Words
+# word-videos
 
 ## Summary
 
-V-Words is a word video clip maker, which can make word short videos from amount of video files. Supports Windows, Linux, MacOS.
+word-videos is a word video clip maker, which can make word short videos from amount of video files. Supports Windows, Linux, MacOS.
 
 Demo:
 
