@@ -13,7 +13,7 @@ V-Words 是一款单词视频制作工具，支持 Windows, Linux, MacOS. 可以
 * 下载安装 [ffmpeg](https://ffmpeg.org/download.html), [ImageMagick](https://imagemagick.org/script/download.php)
 
   * 备注：windows下的安装向导需要勾选 `install legacy utilities`.
-* 安装剩余模块：`pip install -r requirements.txt`
+* 安装python模块：`pip install -r requirements.txt`
 
 ## 使用
 
